@@ -30,9 +30,9 @@ void setup() {
   //Not necessary, timer already is initialized.
    RTM_thread_init();
   
-   //Create thread fro printing string every 3 second.
+   //Create thread for printing string every 3 second.
    RTM_thread_create(NULL, 3000, printThread);
-   //Create thread fro LED blink every 1 second.
+   //Create thread for LED blink every 1 second.
    RTM_thread_create(NULL, 1000, blinkThread);
 }
 
